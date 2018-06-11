@@ -36,8 +36,8 @@ func main() {
 	switchStatementTest()               //Testing switch cases
 	forloopTest()                       //Testing forloops
 	writeToFile("Write this to a file") //Testing writing to a file
-	arraysTest()												//Testing arrays
-	sliceTest() 												//Testing arrays
+	arraysTest()                        //Testing arrays
+	sliceTest()                         //Testing arrays
 }
 
 func helloWorld() {
@@ -238,7 +238,7 @@ func sliceTest() {
 	words3 = append(words3, "brown")
 	words3 = append(words3, "fox")
 	println("Contains: %d Cap: %d", len(words3), cap(words3))
-	printWordsSlice(words3) //Remains Brown
+	printWordsSlice(words3)          //Remains Brown
 	words3 = append(words3, "jumps") //Cap doubles because there was not enough room
 	println("Contains: %d Cap: %d", len(words3), cap(words3))
 	printWordsSlice(words3) //Notice that brown is changed to blue
@@ -248,7 +248,7 @@ func printWords(w [4]string) {
 	for _, word := range w {
 		print("%s ", word)
 	}
-	println("");
+	println("")
 
 	w[2] = "blue"
 }
@@ -257,7 +257,7 @@ func printWordsSlice(w []string) {
 	for _, word := range w {
 		print("%s ", word)
 	}
-	println("");
+	println("")
 
 	w[2] = "blue"
 }
