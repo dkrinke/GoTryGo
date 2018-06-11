@@ -1,4 +1,4 @@
-# Project Title
+# GoTryGo
 
 Practice implementation of the Go programming language
 
